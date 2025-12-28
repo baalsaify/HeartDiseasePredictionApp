@@ -4,9 +4,7 @@ Check <https://www.youtube.com/playlist?list=PL9jefoqM2f-OMXLVc> for more inform
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px
 import pickle
-import base64
 
 st.title("Heart Disease Predictor")
 tab1, tab2 = st.tabs(['Predict', 'Model Information'])
@@ -115,5 +113,4 @@ with tab2:
     })
     st.write('### Each model acheived accuracy')
     st.write(df)
-    #fig = px.bar(df, x='Models', y='Accuracies')
-    #st.plotly_chart(fig, use_container_width=True)
+
